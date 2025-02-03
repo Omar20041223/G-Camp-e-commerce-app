@@ -25,8 +25,16 @@ class AppStyles {
     fontSize: 13,
     color: const Color(0xFF949D9E),
   );
+  static final TextStyle regular14 = _regular.copyWith(
+    fontSize: 14,
+    color: const Color(0xFF949D9E),
+  );
   static final TextStyle regular16 = _regular.copyWith(
     fontSize: 16,
+    color: const Color(0xFF646363),
+  );
+  static final TextStyle regular18 = _regular.copyWith(
+    fontSize: 18,
     color: const Color(0xFF646363),
   );
 
@@ -71,5 +79,10 @@ class AppStyles {
   static final TextStyle bold23 = _bold.copyWith(
     fontSize: 23,
     color: const Color(0xff0c0d0d),
+  );
+  static final TextStyle bold28 = _bold.copyWith(
+    fontSize: 28,
+    color: Colors.black,
+    fontWeight: FontWeight.w500
   );
 }
