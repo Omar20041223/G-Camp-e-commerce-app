@@ -4,7 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:luxira_app/core/utils/app_styles.dart';
 import 'package:luxira_app/core/widgets/custom_button.dart';
 import 'package:luxira_app/features/auth/presentation/views/widgets/auth_footer.dart';
-import 'package:luxira_app/features/auth/presentation/views/widgets/register_widgets/register_header.dart';
+import 'package:luxira_app/features/auth/presentation/views/widgets/auth_header.dart';
 import 'package:luxira_app/features/auth/presentation/views/widgets/register_widgets/register_text_fields.dart';
 
 class RegisterBody extends StatelessWidget {
@@ -18,7 +18,7 @@ class RegisterBody extends StatelessWidget {
         child: Column(
           children: [
             24.verticalSpace,
-            const RegisterHeader(),
+            const AuthHeader(title: "Register", subTitle: "Welcome ! please enter your details.",),
             24.verticalSpace,
             RegisterTextFields(),
             32.verticalSpace,

@@ -1,4 +1,5 @@
 import 'package:go_router/go_router.dart';
+import 'package:luxira_app/features/auth/presentation/views/forget_password_view.dart';
 import 'package:luxira_app/features/auth/presentation/views/register_view.dart';
 import 'package:luxira_app/features/home/presentation/views/home_view.dart';
 import '../../features/onboarding/ui/views/onborading_view.dart';
@@ -10,7 +11,7 @@ abstract class AppRouter {
 
   static final router = GoRouter(
     routes: [
-      GoRoute(path: '/', builder: (context, state) => const HomeView()),
+      GoRoute(path: '/', builder: (context, state) => const ForgetPasswordView()),
       GoRoute(
         path: '/onboardingView',
         builder: (context, state) => const OnboardingView(),

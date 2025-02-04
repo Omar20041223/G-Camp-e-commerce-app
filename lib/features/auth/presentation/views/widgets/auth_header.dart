@@ -2,9 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
 
-import '../../../../../../core/utils/app_styles.dart';
-class RegisterHeader extends StatelessWidget {
-  const RegisterHeader({super.key});
+import '../../../../../core/utils/app_styles.dart';
+
+class AuthHeader extends StatelessWidget {
+  const AuthHeader({super.key, required this.title, required this.subTitle});
+
+  final String title;
+  final String subTitle;
 
   @override
   Widget build(BuildContext context) {
@@ -13,23 +17,23 @@ class RegisterHeader extends StatelessWidget {
       children: [
         Row(
           children: [
-            IconButton(
-                onPressed: () {
+            GestureDetector(
+                onTap: () {
                   GoRouter.of(context).pop();
                 },
-                icon: Icon(Icons.arrow_back_ios_new)),
+                child: Icon(Icons.arrow_back_ios_new)),
             5.horizontalSpace,
             Text(
-              "Register",
+              title,
               style: AppStyles.bold28,
             ),
           ],
         ),
         4.verticalSpace,
         Text(
-          "Welcome ! please enter your details.",
+          subTitle,
           style: AppStyles.regular14.copyWith(
-            color: Colors.black..withAlpha(120),
+            color: Colors.black..withValues(alpha: .47),
           ),
         ),
       ],
