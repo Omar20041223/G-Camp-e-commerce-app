@@ -10,7 +10,7 @@ class CustomTextFormField extends StatelessWidget {
     this.controller,
     this.validator,
     this.obscureText = false,
-    this.autoValidateMode, this.iconData,
+    this.autoValidateMode, this.iconData, this.borderSide,
   });
 
   final String hintText;
@@ -20,6 +20,7 @@ class CustomTextFormField extends StatelessWidget {
   final bool obscureText;
   final AutovalidateMode? autoValidateMode;
   final IconData? iconData;
+  final BorderSide? borderSide;
 
   @override
   Widget build(BuildContext context) {
@@ -39,7 +40,7 @@ class CustomTextFormField extends StatelessWidget {
         ),
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(8.r),
-          borderSide:  BorderSide(
+          borderSide: borderSide ?? BorderSide(
             color: Colors.black..withAlpha(122),
             width: 1.5,
           ),
