@@ -6,6 +6,10 @@ class AppStyles {
     fontFamily: 'Poppins',
     fontWeight: FontWeight.w400,
   );
+  static const _w500 = TextStyle(
+    fontFamily: 'Poppins',
+    fontWeight: FontWeight.w500,
+  );
 
   static const _semiBold = TextStyle(
     fontFamily: 'Poppins',
@@ -36,6 +40,10 @@ class AppStyles {
   static final TextStyle regular18 = _regular.copyWith(
     fontSize: 18,
     color: const Color(0xFF646363),
+  );
+  static final TextStyle w50020 = _w500.copyWith(
+    fontSize: 20,
+    color: Colors.black,
   );
 
   static final TextStyle semiBold11 = _semiBold.copyWith(

@@ -1,7 +1,6 @@
 import 'package:go_router/go_router.dart';
 import 'package:luxira_app/features/auth/presentation/views/register_view.dart';
 import 'package:luxira_app/features/home/presentation/views/home_view.dart';
-import 'package:luxira_app/features/splash/ui/views/splash_view.dart';
 import '../../features/onboarding/ui/views/onborading_view.dart';
 
 abstract class AppRouter {
