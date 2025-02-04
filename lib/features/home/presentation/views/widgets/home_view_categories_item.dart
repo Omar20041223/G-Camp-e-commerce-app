@@ -11,6 +11,7 @@ class HomeViewCategoriesItem extends StatelessWidget {
       width: 138.w,
       margin: EdgeInsets.only(right: 24.36.w),
       decoration: BoxDecoration(
+        color: Colors.white,
         borderRadius: BorderRadius.circular(6.5.r),
         boxShadow: [
            BoxShadow(

@@ -45,6 +45,10 @@ class AppStyles {
     fontSize: 20,
     color: Colors.black,
   );
+  static final TextStyle w50016 = _w500.copyWith(
+    fontSize: 16,
+    color: Colors.black,
+  );
 
   static final TextStyle semiBold11 = _semiBold.copyWith(
     fontSize: 11,
